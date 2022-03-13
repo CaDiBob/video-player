@@ -2,21 +2,10 @@
 <html>
 <head>
   <style type="text/css">
-    i.fa-pause{
-      color: white;
-    }
-    i.fa-play{
-      color: white;
-    }
-    div.black{
+    div.black-stripe{
       background-color: black;
     }
     button.js-pause-button{
-      border-style: hidden;
-      cursor: pointer;
-      background-color: transparent;
-    }
-    button.js-play-button {
       border-style: hidden;
       cursor: pointer;
       background-color: transparent;
@@ -30,9 +19,13 @@
 <div id="player" style="width: 800px; height: 600px;">
   <div class="js-video-container" style="width: 100%; height: 100%"></div>
   <div>
-    <div class="black">
-      <button class="js-play-button"><i class="fa fa-play" aria-hidden="true"></i></button>
-      <button class="js-pause-button"><i class="fa fa-pause" aria-hidden="true"></i></button>
+    <div class="black-stripe">
+      <button class="js-play-button" style="border-style: hidden; cursor: pointer; background-color: transparent;">
+        <i class="fa fa-play" style="color: white;" aria-hidden="true"></i>
+      </button>
+      <button class="js-pause-button" style="border-style: hidden; cursor: pointer; background-color: transparent;">
+        <i class="fa fa-pause" style="color: white; aria-hidden="true"></i>
+      </button>
     </div>
   </div>
 </div>
