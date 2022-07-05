@@ -31,18 +31,14 @@
       background-color: transparent;
     }
     .viewing-panel{
-      color: white;
-      font-family: 'Roboto', sans-serif;
-    }
-    .video-duration{
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
       margin: 11px;
-      color: white;
-      font-family: 'Roboto', sans-serif;
+      margin-left: 2px;
       margin-right: 1px;
-    }
-    .viewing-time{
-      margin: 11px;
-      margin-left: 1px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
     }
     .border-left{
       display: flex;
@@ -75,10 +71,9 @@
         <div class="viewing-panel">
           <div class="viewing-time"><span class="js-current-time"></span></div>
           <div class="viewing-progressbar"></div>
-
+          <div class="video-duration"><span class="js-duration"></span></div>
         </div>
       </div>
-      <div class="video-duration"><span class="js-duration"></span></div>
       <button class="player-button js-fullscreen-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
