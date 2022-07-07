@@ -40,9 +40,33 @@
       color: white;
       font-family: 'Roboto', sans-serif;
     }
-    .border-left{
+    .viewing-progressbar{
+      flex: auto;
+    }
+    .progress{
       display: flex;
-      flex-grow: 1;
+      margin-left: 4px;
+    }
+    .progress-slider{
+      border-radius: 5px;
+      margin: 7px;
+      height: 5px;
+      background-color:#f8104d;
+    }
+    .slider{
+      height: 8px;
+      width: 8px;
+      margin: 2px;
+      margin-left: -15px;
+      background-color: red;
+      border-color: white;
+      border-width: 3px;
+      border-style: solid;
+      border-radius: 50%;
+    }
+    .control-panel{
+      background-color: black;
+      display: flex;
     }
   </style>
   <title>Видео плеер</title>
@@ -52,31 +76,37 @@
 </head>
 <body>
   <div id="player" class="player">
-    <div class="js-video-container">
-    </div>
-    <div class="buttons">
-      <button class="player-button js-play-button">
-        <i class="fa fa-play" aria-hidden="true"></i>
-      </button>
-      <button class="player-button js-pause-button">
-        <i class="fa fa-pause" aria-hidden="true"></i>
-      </button>
-      <button class="player-button js-volume-button">
-        <i class="fa fa-volume-off" aria-hidden="true"></i>
-      </button>
-      <button class="player-button js-mute-button">
-        <i class="fa fa-volume-up" aria-hidden="true"></i>
-      </button>
-      <div class="border-left">
-        <div class="viewing-panel">
-          <div class="viewing-time"><span class="js-current-time"></span></div>
-          <div class="viewing-progressbar"></div>
-          <div class="video-duration"><span class="js-duration"></span></div>
-        </div>
+    <div class="js-video-container"></div>
+    <div class="control-panel">
+      <div class="buttons left-buttons">
+        <button class="player-button js-play-button">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button class="player-button js-pause-button">
+          <i class="fa fa-pause" aria-hidden="true"></i>
+        </button>
+        <button class="player-button js-volume-button">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+        </button>
+        <button class="player-button js-mute-button">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
       </div>
-      <button class="player-button js-fullscreen-button">
-        <i class="fa fa-expand" aria-hidden="true"></i>
-      </button>
+      <div class="viewing-panel">
+        <div class="viewing-time"><span class="js-current-time"></span></div>
+        <div class="viewing-progressbar">
+          <div class="progress js-progress">
+            <div class="progress-slider js-progress-slider"></div>
+            <div class="slider"></div>
+          </div>
+        </div>
+        <div class="video-duration"><span class="js-duration"></span></div>
+      </div>
+      <div class="buttons right-buttons">
+        <button class="player-button js-fullscreen-button">
+          <i class="fa fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
