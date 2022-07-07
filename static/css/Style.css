@@ -1,0 +1,73 @@
+.js-video-container{
+    width: 100%;
+    height: 100%;
+  }
+  .player{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px gray;
+    width: 800px;
+    height: 600px;
+  }
+  .buttons{
+    background-color: black;
+    display: flex;
+  }
+  .player-button{
+    width: 37px;
+    height: 43px;
+    font-size: 20px;
+    color: white;
+    margin-right: 0.2px;
+    border-style: hidden;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .viewing-panel{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 11px;
+    margin-left: 2px;
+    margin-right: 1px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  .viewing-progressbar{
+    flex: auto;
+  }
+  .progress{
+    display: flex;
+    margin-left: 4px;
+  }
+  .progress-slider{
+    border-radius: 5px;
+    margin: 7px;
+    height: 5px;
+    background-color:#f8104d;
+  }
+  .slider{
+    opacity: 0;
+    height: 8px;
+    width: 8px;
+    margin: 2px;
+    margin-left: -15px;
+    background-color: red;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    transition-timing-function: ease-out;
+    transition-duration: 300ms;
+  }
+  .control-panel:hover .slider{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    opacity: 1;
+  }
+  .control-panel{
+    background-color: black;
+    display: flex;
+  }

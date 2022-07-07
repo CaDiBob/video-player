@@ -4,86 +4,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style type="text/css">
-    .js-video-container{
-      width: 100%;
-      height: 100%;
-    }
-    .player{
-      margin-top: 20px;
-      margin-left: 20px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 10px 5px 5px gray;
-      width: 800px;
-      height: 600px;
-    }
-    .buttons{
-      background-color: black;
-      display: flex;
-    }
-    .player-button{
-      width: 37px;
-      height: 43px;
-      font-size: 20px;
-      color: white;
-      margin-right: 0.2px;
-      border-style: hidden;
-      cursor: pointer;
-      background-color: transparent;
-    }
-    .viewing-panel{
-      display: flex;
-      justify-content: space-between;
-      flex-grow: 1;
-      margin: 11px;
-      margin-left: 2px;
-      margin-right: 1px;
-      color: white;
-      font-family: 'Roboto', sans-serif;
-    }
-    .viewing-progressbar{
-      flex: auto;
-    }
-    .progress{
-      display: flex;
-      margin-left: 4px;
-    }
-    .progress-slider{
-      border-radius: 5px;
-      margin: 7px;
-      height: 5px;
-      background-color:#f8104d;
-    }
-    .slider{
-      opacity: 0;
-      height: 8px;
-      width: 8px;
-      margin: 2px;
-      margin-left: -15px;
-      background-color: red;
-      border-color: white;
-      border-width: 3px;
-      border-style: solid;
-      border-radius: 50%;
-      transition-timing-function: ease-out;
-      transition-duration: 300ms;
-    }
-    .control-panel:hover .slider{
-      transition-duration: 300ms;
-      transition-timing-function: ease-in;
-      opacity: 1;
-    }
-    .control-panel{
-      background-color: black;
-      display: flex;
-    }
-  </style>
   <title>Видео плеер</title>
   <meta charset="utf-8">
-  <link rel="icon" href="./image/favicon.png" type="image/png">
-  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./static/css/Style.css">
+  <link rel="icon" href="./static/image/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div id="player" class="player">
@@ -122,7 +48,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-  <script src="player.js"></script>
+  <script src="./static/js/player.js"></script>
 
   <script type="text/javascript">
     createPlayer({elementId: 'player'});
