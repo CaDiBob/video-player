@@ -1,6 +1,6 @@
-.js-video-container{
+.video-container{
     width: 100%;
-    height: 100%;
+    flex-grow: 1;
   }
   .player{
     margin-top: 20px;
@@ -29,9 +29,6 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    margin: 11px;
-    margin-left: 2px;
-    margin-right: 1px;
     color: white;
     font-family: 'Roboto', sans-serif;
   }
@@ -40,11 +37,11 @@
   }
   .progress{
     display: flex;
-    margin-left: 4px;
+    align-items: center;
   }
   .progress-slider{
     border-radius: 5px;
-    margin: 7px;
+    display: flex;
     height: 5px;
     background-color:#f8104d;
   }
@@ -52,7 +49,7 @@
     opacity: 0;
     height: 8px;
     width: 8px;
-    margin: 2px;
+    display: flex;
     margin-left: -15px;
     background-color: red;
     border-color: white;
@@ -70,4 +67,5 @@
   .control-panel{
     background-color: black;
     display: flex;
+    align-items: center;
   }
