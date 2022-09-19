@@ -31,17 +31,17 @@
     flex-grow: 1;
     color: white;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
   }
   .viewing-progressbar{
     flex: auto;
   }
   .progress{
     display: flex;
-    margin-left: 4px;
     align-items: center;
+    margin-left: 4px;
   }
   .progress-slider{
-    align-items: center;
     margin: 7px;
     border-radius: 5px;
     height: 5px;
