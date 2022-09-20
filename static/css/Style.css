@@ -70,3 +70,9 @@
     display: flex;
     align-items: center;
   }
+  .viewing-time{
+    font-size: 16px;
+  }
+  .video-duration{
+    font-size: 16px;
+  }
